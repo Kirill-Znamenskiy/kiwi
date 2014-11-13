@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package
+  version="2.0"
+  xmlns="http://pear.php.net/dtd/package-2.0"
+  xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd
+  "
+>
+  <name>Kiwi</name>
+  <channel>kiwi-pear.v3project.ru</channel>
+  <summary>This is a simple PECL package.</summary>
+  <description>This is a simple PECL package.</description>
+  <lead>
+    <name>Kirill Znamenskiy</name>
+    <user>helloworld</user>
+    <email>k.znamenskiy at gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date></date>
+  <time></time>
+  <version>
+    <release>0.0.1</release>
+    <api>0.0.1</api>
+  </version>
+  <stability>
+    <release>devel</release>
+    <api>devel</api>
+  </stability>
+  <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+  <notes>-</notes>
+  <contents></contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.0.0</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.0</min>
+      </pearinstaller>
+    </required>
+  </dependencies>
+  <providesextension>Kiwi</providesextension>
+  <extbinrelease>
+    <installconditions>
+      <os><name>linux</name></os>
+      <arch>
+       <pattern>*i?86*</pattern>
+       <conflicts/>
+      </arch>
+    </installconditions>
+    <filelist>
+      <install name="Kiwi_linux32.so" as="Kiwi.so"/>
+    </filelist>
+  </extbinrelease>
+  <extbinrelease>
+    <installconditions>
+      <os><name>linux</name></os>
+      <arch>
+       <pattern>*x86_64*</pattern>
+       <conflicts/>
+      </arch>
+    </installconditions>
+    <filelist>
+      <install name="Kiwi_linux64.so" as="Kiwi.so"/>
+    </filelist>
+  </extbinrelease>
+  <extbinrelease>
+    <installconditions>
+      <os><name>darwin</name></os>
+      <arch>
+       <pattern>*i?86*</pattern>
+       <conflicts/>
+      </arch>
+    </installconditions>
+    <filelist>
+      <install name="Kiwi_darwin32.so" as="Kiwi.so"/>
+    </filelist>
+  </extbinrelease>
+  <extbinrelease>
+    <installconditions>
+      <os><name>darwin</name></os>
+      <arch>
+       <pattern>*x86_64*</pattern>
+       <conflicts/>
+      </arch>
+    </installconditions>
+    <filelist>
+      <install name="Kiwi_darwin64.so" as="Kiwi.so"/>
+    </filelist>
+  </extbinrelease>
+</package>
